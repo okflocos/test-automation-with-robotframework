@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210101 01:02:55.073" rpa="false">
+<suite id="s1" name="TestSitePractice" source="C:\Projetos\SuiteSiteTestePractice\tests\TestSitePractice.robot">
+<test id="s1-t1" name="Caso de Teste 01: Pesquisar produto inexistente">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210101 01:02:55.664" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210101 01:02:55.661" endtime="20210101 01:02:59.534"></status>
+</kw>
+<status status="PASS" starttime="20210101 01:02:55.659" endtime="20210101 01:02:59.534"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20210101 01:02:59.564" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20210101 01:02:59.564" endtime="20210101 01:03:06.894"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20210101 01:03:07.026" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20210101 01:03:06.894" endtime="20210101 01:03:07.027"></status>
+</kw>
+<status status="PASS" starttime="20210101 01:02:59.563" endtime="20210101 01:03:07.027"></status>
+</kw>
+<kw name="Conferir se a página home foi exibida">
+<msg timestamp="20210101 01:03:07.038" level="FAIL">No keyword with name 'Conferir se a página home foi exibida' found.</msg>
+<status status="FAIL" starttime="20210101 01:03:07.038" endtime="20210101 01:03:07.038"></status>
+</kw>
+<status status="FAIL" starttime="20210101 01:02:55.657" endtime="20210101 01:03:07.040" critical="yes">No keyword with name 'Conferir se a página home foi exibida' found.</status>
+</test>
+<test id="s1-t2" name="Caso de Teste 02: Pesquisar produto não existente">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210101 01:03:07.063" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210101 01:03:07.062" endtime="20210101 01:03:10.909"></status>
+</kw>
+<status status="PASS" starttime="20210101 01:03:07.061" endtime="20210101 01:03:10.910"></status>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com</arg>
+</arguments>
+<msg timestamp="20210101 01:03:10.945" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20210101 01:03:10.943" endtime="20210101 01:03:18.389"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20210101 01:03:18.425" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20210101 01:03:18.389" endtime="20210101 01:03:18.425"></status>
+</kw>
+<status status="PASS" starttime="20210101 01:03:10.942" endtime="20210101 01:03:18.426"></status>
+</kw>
+<kw name="Conferir se a página home foi exibida">
+<msg timestamp="20210101 01:03:18.435" level="FAIL">No keyword with name 'Conferir se a página home foi exibida' found.</msg>
+<status status="FAIL" starttime="20210101 01:03:18.435" endtime="20210101 01:03:18.436"></status>
+</kw>
+<status status="FAIL" starttime="20210101 01:03:07.059" endtime="20210101 01:03:18.444" critical="yes">No keyword with name 'Conferir se a página home foi exibida' found.</status>
+</test>
+<status status="FAIL" starttime="20210101 01:02:55.082" endtime="20210101 01:03:18.458"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="TestSitePractice">TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
